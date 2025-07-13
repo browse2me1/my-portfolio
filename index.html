@@ -1,57 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header, footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: #fff;
-      text-decoration: none;
-    }
-    .container {
-      width: 90%;
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem 0;
-    }
-    section {
-      margin-bottom: 4rem;
-    }
-    h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-    }
-    .skills-list, .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .skill, .contact-links a {
-      padding: 0.5rem 1rem;
-      background: #f4f4f4;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-    .project {
-      border: 1px solid #ddd;
-      padding: 1rem;
-      margin-bottom: 1rem;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #333; color: #fff; text-align: center; padding: 1rem; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; }
+    .container { padding: 2rem; }
+    h2 { border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; }
+    .section { margin-bottom: 3rem; }
   </style>
 </head>
 <body>
@@ -68,59 +27,30 @@
   </header>
 
   <div class="container">
-    <section id="about">
+    <section id="about" class="section">
       <h2>About Me</h2>
-      <p>Your bio goes here. Who you are, what you do, what you’re passionate about.</p>
-      <a href="your-resume.pdf" target="_blank">Download Resume</a>
+      <p>Write your bio here.</p>
     </section>
-
-    <section id="skills">
+    <section id="skills" class="section">
       <h2>Skills</h2>
-      <div class="skills-list">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">PHP</div>
-        <div class="skill">MySQL</div>
-        <!-- Add more -->
-      </div>
+      <ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
     </section>
-
-    <section id="projects">
+    <section id="projects" class="section">
       <h2>Projects</h2>
-      <div class="project">
-        <h3>Project Title 1</h3>
-        <p>Description of the project.</p>
-        <p><strong>Tech Used:</strong> HTML, CSS, JS</p>
-      </div>
-      <div class="project">
-        <h3>Project Title 2</h3>
-        <p>Description of the project.</p>
-        <p><strong>Tech Used:</strong> PHP, MySQL</p>
-      </div>
+      <p>Describe your projects here.</p>
     </section>
-
-    <section id="experience">
-      <h2>Experience & Education</h2>
-      <p><strong>Job Title</strong> at Company Name (Years)</p>
-      <p>Description of your role.</p>
-      <p><strong>Degree</strong> at University Name (Years)</p>
-      <p>Description of studies.</p>
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <p>Describe your experience or education here.</p>
     </section>
-
-    <section id="contact">
+    <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>You can reach me at:</p>
-      <div class="contact-links">
-        <a href="mailto:you@example.com">Email</a>
-        <a href="https://linkedin.com">LinkedIn</a>
-        <a href="https://github.com">GitHub</a>
-      </div>
+      <p>Email: your@email.com</p>
     </section>
   </div>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 Your Name</p>
   </footer>
 </body>
 </html>
